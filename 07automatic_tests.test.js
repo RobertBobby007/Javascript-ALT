@@ -1,3 +1,6 @@
+// celý kod je naschvál v komentu, aby to nedělalo problémy v webstore a studio code
+
+
 const sum = require('./07automatic_tests');
 
 //jest
