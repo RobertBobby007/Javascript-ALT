@@ -33,3 +33,22 @@ clone.statement = "hate google maps"
 console.log(original.statement);
 console.log(clone.statement);
 
+//spojování objektů
+let person = {
+    "name": "Robert"
+}
+
+let job = {
+    "job": "Mapy"
+}
+
+let age = {
+    "age": "17"
+}
+
+let personMerged =
+    {...person,...job,...age}
+
+//poslední přepisuje předchozí
+console.log(personMerged);
+
