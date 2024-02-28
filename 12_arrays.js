@@ -60,7 +60,7 @@ console.log(fruits)
 
 //vicedimenzionální pole
 let matrix = [
-    [1, 2 , 3]
+    [1, 2 , 3],
     [4, 5, 6]
 ]
 
@@ -83,7 +83,7 @@ console.log(all)
 
 //forEach
 all.forEach((
-    item, index, array) => console.log(item, index, array)
+    item, index, array) => console.log(item, index, array))
 
     all.forEach((item) => console.log(item))
 
@@ -97,3 +97,26 @@ console.log(all.includes("bear"))
 
 //filtrce
 let threeLettersAnimals = all.filter((animal) => animal.length === 3)
+console.log(threeLettersAnimals)
+
+//map - transformace
+let upperCaseAnimals = all.map((animal) => animal.toUpperCase())
+console.log(upperCaseAnimals)
+
+//sort
+all.sort()
+console.log(all)
+
+//reverse
+all.reverse()
+console.log(all)
+
+//split
+let sentence = "hello, how are you?"
+let words = sentence.split("")
+console.log(words)
+
+//join
+words[0] = "Hi"
+let newSentence = words.join(" ")
+console.log(newSentence)
