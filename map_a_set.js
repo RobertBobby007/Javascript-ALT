@@ -16,3 +16,7 @@ console.log(map)
 //přístup k hodnotě (get)
 
 console.log(map.get("name"))
+
+console.log(map.name) //chová se jinak než u objektu
+console.log(map["name"]) //chová se jinak než u objektu
+
