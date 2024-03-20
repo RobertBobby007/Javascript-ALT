@@ -35,4 +35,29 @@ console.log(map.has("time"))
 map.clear()
 console.log(map)
 
-//interace přes mapu
+//velikost mapy
+console.log(map.size)
+console.log(map.length) //nefunguje, vrací underined
+
+//iterace přes mapu
+console.log(map.keys())
+for (let key of map.keys){
+    console.log(key)
+}
+
+//hodnoty
+console.log(map.values())
+for (let value of map.values()){
+    console.log(value)
+}
+
+//klíče a hodnoty, dvojice, entries
+console.log(map.entries())
+for (let entry of map.entries()){
+    console.log(entry)
+    console.log(typeof entry)
+}
+
+for (let [key, value] of map.entries()){
+    console.log(key, value)
+}
