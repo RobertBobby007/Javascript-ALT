@@ -85,4 +85,6 @@ let weirdMap = new Map()
 weirdMap.set(true, "ano")
 console.log(weirdMap)
 
+//převedení mapy na objekt
+
 console.log(Object.fromEntries(weirdMap))
