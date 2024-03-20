@@ -20,3 +20,19 @@ console.log(map.get("name"))
 console.log(map.name) //chová se jinak než u objektu
 console.log(map["name"]) //chová se jinak než u objektu
 
+//testování přtomnosti klíče
+console.log(map.has("name"))
+console.log(map.has("time"))
+
+map.set("time", undefined)
+console.log(map.has("time"))
+
+//smazání klíče a hodonoty
+map.delete("time")
+console.log(map.has("time"))
+
+//smazání všech klíčů a hodnot
+map.clear()
+console.log(map)
+
+//interace přes mapu
