@@ -88,3 +88,39 @@ console.log(weirdMap)
 //převedení mapy na objekt
 
 console.log(Object.fromEntries(weirdMap))
+
+//set - množina
+//prvek se může vyskytovat jen jednou
+
+//vytvoření množiny
+let mnozina = new Set()
+console.log(mnozina)
+
+//přidání prvků do množiny
+mnozina.add(1)
+console.log(mnozina)
+
+mnozina.add(1) //co se stane
+console.log(mnozina)
+
+//ověření přítomnosti - has)
+console.log(mnozina.has(1))
+console.log(mnozina)
+
+mnozina.add(1)
+mnozina.add(2)
+mnozina.add(3)
+console.log(mnozina)
+
+mnozina.add([4, 5])
+
+// hromadne vytvoreni
+let mnozina2 = new Set([1,2,3,4,5,6])
+console.log()
+
+// sjednoceni, prunik, rozdil, symetricky rozdil
+let A = new Set([1,2,3,4])
+let B = new Set([3,4,5,6])
+
+let sjednoceni = A.union(B)
+console.log(sjednoceni)
