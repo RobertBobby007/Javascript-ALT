@@ -60,4 +60,29 @@ for (let entry of map.entries()){
 
 for (let [key, value] of map.entries()){
     console.log(key, value)
+    console.log(typeof key, typeof value)
 }
+
+//alternativní způsob vytváření
+//z pole dvojic klíč:hodnota
+let numbers = new Map([
+    ["jedna", 1],
+    ["dva", 2],
+    ["tři", 3]
+])
+
+console.log(numbers)
+//z objektu
+let Deny = {
+    "name": "SugarDeny",
+    "age": 25
+}
+
+let SugarDenyMap = new Map(Object.entries(Deny))
+console.log(SugarDenyMap)
+
+let weirdMap = new Map()
+weirdMap.set(true, "ano")
+console.log(weirdMap)
+
+console.log(Object.fromEntries(weirdMap))
