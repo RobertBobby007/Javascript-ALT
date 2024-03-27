@@ -26,3 +26,14 @@ console.log(date.getDate())
 
 //den v týdnu
 console.log(date.getDay())
+
+//časová pásma
+let currentdate = new Date()
+let options = {timeZone: "Europe/Prague"}
+
+let currentTimeinnewyork = currentdate.toLocaleString("cs-CZ", options)
+console.log(currentTimeinnewyork)
+
+
+//parsovaní data
+let isoTime = Date
